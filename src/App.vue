@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div>Hello World</div>
+  <Hello name="Merlin" />
 </template>
 
 <style>
