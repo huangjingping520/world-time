@@ -7,5 +7,7 @@ const upperCase = computed(() => props.name.toUpperCase())
 </script>
 
 <template>
-  <div>Hello {{ upperCase }}</div>
+  <div class="text-blue font-sans text-3xl">Hello {{ upperCase }}</div>
+  <div text="red-300 3xl" font-mono>Hello {{ upperCase }}</div>
+  <div i-carbon-bee text="5xl blue"></div>
 </template>
