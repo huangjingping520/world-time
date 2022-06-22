@@ -3,5 +3,7 @@
 </script>
 
 <template>
-  <div />
+  <div border="b gray/20" p2>
+    <TimezoneSearch />
+  </div>
 </template>

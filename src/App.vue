@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import { zones } from './composables/state'
 </script>
 
 <template>
-  <div border="~ gray/20" m2 p2>
-    <pre>{{ zones }}</pre>
-    <TimezoneSearch />
+  <div border="~ gray/20" m2>
+    <ActionBar />
+    <TimeSchedular />
   </div>
 </template>
 
