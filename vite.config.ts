@@ -22,6 +22,9 @@ export default defineConfig({
       vueTemplate: true
     }),
     UnoCSS({
+      shortcuts: {
+        'border-base': 'border-gray/20 dark:border-gray/15'
+      },
       presets: [
         presetUno(),
         presetAttributify(),
