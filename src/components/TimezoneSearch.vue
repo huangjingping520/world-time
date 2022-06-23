@@ -32,9 +32,10 @@ function onkeyDown(e: KeyboardEvent) {
   <div relative>
     <input v-model="input" type="text" text-lg placeholder="Search timezone..." px2 py1 w-full border="~ base rounded"
       bg-transparent @keydown="onkeyDown">
-    <div v-show="input" absolute top-full bg-base p1 border="~ base" left-0 right-0 max-h-100 overflow-auto>
-      <button v-for="i, idx of searchResult" :key="i.refIndex" block w-full :class="idx === index ? 'bg-gray:5' : ''"
-        @click="add(i.item)">
+    <div v-show="input" absolute top-full bg-base p1 z-10 border="~ base rounded" shadow left-0 right-0 max-h-100
+      overflow-auto>
+      <button v-for="i, idx of searchResult" :key="i.refIndex" block w-full px2
+        :class="idx === index ? 'bg-gray:5' : ''" @click="add(i.item)">
         <TimezoneItem :timezone="i.item" />
       </button>
     </div>
